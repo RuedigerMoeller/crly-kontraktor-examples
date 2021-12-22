@@ -1,4 +1,6 @@
 package basics.complexobjects;
 
-public class SampleDTOAutoMapped extends SampleDTO {
+import org.nustaq.kontraktor.remoting.base.JsonMappable;
+
+public class SampleDTOAutoMapped extends SampleDTO implements JsonMappable {
 }

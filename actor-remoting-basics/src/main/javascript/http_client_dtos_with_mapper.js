@@ -33,6 +33,8 @@ connectPromise.then( async (remote, e) =>  {
     // to make use of object mapping we need to "hide" the dto from default serialization
     // so we need to encode to string manually before and after
     let dtoResult = await remote.jsonArgMapped(JSON.stringify(dto));
+    // let dtoResult = await remote.jsonArgAutoMapped(JSON.stringify(dto));
+
     console.log( JSON.parse(dtoResult),e);
 
   }
