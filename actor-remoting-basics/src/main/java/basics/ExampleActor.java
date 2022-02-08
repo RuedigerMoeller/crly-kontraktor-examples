@@ -4,11 +4,11 @@ import org.nustaq.kontraktor.*;
 
 public class ExampleActor extends Actor<ExampleActor> implements DTOMixin {
 
-    public IPromise pingMe(String ping) {
+    public IPromise<String> pingMe(String ping) {
         return resolve("hi "+ping);
     }
 
-    public IPromise benchMe(int value) {
+    public IPromise<Integer> benchMe(int value) {
         return resolve(value);
     }
 

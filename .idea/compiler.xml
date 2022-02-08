@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="crly-soa-example" />
         <module name="actor-remoting-basics" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="14">
       <module name="actor-remoting-basics" target="14" />
+      <module name="crly-soa-example" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

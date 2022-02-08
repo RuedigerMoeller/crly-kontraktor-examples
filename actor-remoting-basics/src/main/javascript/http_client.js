@@ -13,7 +13,7 @@ kclient.listener.log = () => {}; // get rid of kclient's internal logging (open 
  *
  */
 
-//const connectPromise = kclient.connect("http://localhost:7779/ws","WS"); use this for websocket
+//const connectPromise = kclient.connect("http://localhost:7779/ws","WS"); // use this for websocket
 const connectPromise = kclient.connect("http://localhost:7779/api","HTLP");
 
 connectPromise.then( async (remote, e) =>  {

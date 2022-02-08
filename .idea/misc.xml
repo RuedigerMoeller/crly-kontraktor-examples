@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/actor-remoting-basics/pom.xml" />
+        <option value="$PROJECT_DIR$/soa-with-kontraktor/pom.xml" />
       </list>
     </option>
   </component>
