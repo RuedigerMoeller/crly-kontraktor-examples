@@ -62,9 +62,7 @@
     <orderEntry type="library" name="Maven: com.google.jsinterop:jsinterop-annotations:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.72" level="project" />
     <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.7.0" level="project" />
-    <orderEntry type="library" name="Maven: de.ruedigermoeller:service-support:5.1.8" level="project" />
-    <orderEntry type="library" name="Maven: de.ruedigermoeller:reallive:5.1.12" level="project" />
-    <orderEntry type="library" name="Maven: it.unimi.dsi:fastutil:8.3.1" level="project" />
+    <orderEntry type="library" name="Maven: de.ruedigermoeller:service-support:5.1.10" level="project" />
     <orderEntry type="library" name="Maven: org.imgscalr:imgscalr-lib:4.2" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-reactivestreams:1.13.1" level="project" />
     <orderEntry type="library" name="Maven: org.mongodb:mongodb-driver-async:3.12.2" level="project" />
@@ -74,5 +72,7 @@
     <orderEntry type="library" name="Maven: javax.mail:javax.mail-api:1.5.2" level="project" />
     <orderEntry type="library" name="Maven: javax.activation:activation:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.sun.mail:javax.mail:1.5.2" level="project" />
+    <orderEntry type="library" name="Maven: de.ruedigermoeller:reallive:5.1.15" level="project" />
+    <orderEntry type="library" name="Maven: it.unimi.dsi:fastutil:8.3.1" level="project" />
   </component>
 </module>
