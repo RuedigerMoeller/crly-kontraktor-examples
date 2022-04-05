@@ -22,13 +22,27 @@ public class TestService extends ServiceActor<TestService> {
     }
 
     private void runTest() {
+        String key = "45";
         RealLiveTable test = dclient.tbl("test");
-        test.subscribeOn( rec -> rec.getBool("flag"), change -> {
+        test.remove(key);
+        test.subscribeOn( rec -> !rec.getBool("flag"), change -> {
             System.out.println("received"+change);
         });
+        delayed( 2000, () -> {
+            System.out.println("create "+key);
+            test.update(key, "dummy", true );
+        });
+        delayed( 3000, () -> {
+            System.out.println("updating set true expect remove");
+            test.update(key, "flag", true );
+        });
+        delayed( 4000, () -> {
+            System.out.println("updating set false expect add");
+            test.update(key, "flag", false );
+        });
         delayed( 5000, () -> {
-            System.out.println("updating");
-            test.update("42", "flag", true );
+            System.out.println("updating set false expect add");
+            test.update(key, "flag", true );
         });
     }
 
