@@ -23,4 +23,11 @@ public class ExampleActor extends Actor<ExampleActor> implements DTOMixin {
         delayed(count*1000l, () -> cb.complete()); // close callback stream
     }
 
+    public IPromise<String> greet(String name) {
+        Promise promise = new Promise();
+        delayed( 5000, () -> {
+            promise.resolve("Hello "+name);
+        });
+        return promise;
+    }
 }

@@ -28,6 +28,10 @@ connectPromise.then( async (remote, e) =>  {
       else if ( err ) console.error(err);
       else console.log("done");
     });
+
+    remote.greet("JavaScript").then( (r,e) => {
+      console.log(r);
+    });
   }
 
 });

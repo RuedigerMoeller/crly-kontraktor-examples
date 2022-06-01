@@ -26,7 +26,7 @@ public class TestService extends ServiceActor<TestService> {
         RealLiveTable test = dclient.tbl("test");
         test.remove(key);
         test.subscribeOn( rec -> !rec.getBool("flag"), change -> {
-            System.out.println("received"+change);
+            System.out.println("received "+change);
         });
         delayed( 2000, () -> {
             System.out.println("create "+key);

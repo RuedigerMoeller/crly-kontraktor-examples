@@ -2,6 +2,7 @@ package soa;
 
 import org.nustaq.kontraktor.IPromise;
 import org.nustaq.kontraktor.remoting.base.ServiceDescription;
+import org.nustaq.kontraktor.remoting.tcp.TCPConnectable;
 import org.nustaq.kontraktor.services.ServiceActor;
 import org.nustaq.kontraktor.services.ServiceArgs;
 import org.nustaq.kontraktor.services.ServiceRegistry;
@@ -17,7 +18,7 @@ public class PublicService extends ServiceActor<PublicService> {
     @Override
     protected ServiceDescription createServiceDescription() {
         return new ServiceDescription("PublicService")
-            .connectable(createDefaultConnectable());
+            .connectable( new TCPConnectable( getClass(), "localhost", getPort() ));
     }
 
     @Override
